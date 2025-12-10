@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Funster";
+  src: url("../assets/fonts/funster.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Funster", sans-serif !important;
+}
 :root{
   --bg:#FFF7EB;
   --accent:#FFB84D;
