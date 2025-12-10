@@ -1,17 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alphabets – Little Learners MV</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Letters — Little Learners MV</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Letters page — Little Learners MV" />
 </head>
-
 <body>
-  <h1 class="title">English Alphabets (A–Z)</h1>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">LL</div>
+      <div>
+        <h1>Letters</h1>
+        <p>Tap a letter to interact — now using the Funster font.</p>
+      </div>
+    </div>
 
-  <div id="letters-container"></div>
+    <div class="top-actions">
+      <a class="btn" href="index.html">Home</a>
+      <button class="btn primary" id="shuffle">Shuffle</button>
+    </div>
+  </header>
 
-  <script src="js/loadletters.js"></script>
+  <main class="container">
+    <div class="letters-hero">
+      <h2 style="margin:0">Alphabet Cards</h2>
+      <p style="margin:8px 0 0; color:var(--muted)">Large, clear letters—perfect for early learners.</p>
+    </div>
+
+    <section class="letters-grid" id="lettersGrid" aria-label="Alphabet grid">
+      <!-- JS will inject letter cards here -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    Tap a card — press Shuffle to randomize the order.
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
